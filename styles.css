@@ -1,0 +1,107 @@
+/* CSS Reset */
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    /* outline:1px solid red; */
+}
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+    /* border:1px solid red; */
+}
+
+h1,
+h2,
+h3,
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* Styling */
+
+/* Header */
+.socialLinks {
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: #1F2937;
+    font-family: roboto;
+    color: white;    
+    gap: 10px;
+    /* border: 3px solid yellow; */
+    justify-content: center;
+}
+
+.logo {
+    width: 60px;    
+    border-radius: 50%;
+    /* border: 1px solid rgb(92, 221, 23); */
+}
+
+.headerPart1,
+.headerPart2 {
+    display: flex;
+}
+
+.headerPart1 {
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.headerPart2 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.signUpSec,
+.headerSignUpImg {
+    flex: 1;
+}
+
+.headerSignUpImg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerPart2 img {
+    width: 100%;
+}
