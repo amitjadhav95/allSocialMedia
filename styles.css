@@ -100,11 +100,13 @@ a {
 .headerSignUpImg {
     display: flex;
     justify-content: flex-end;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 .headerPart2 img {
     width: 500px;
+    /* Remove when media query  */
+    min-width: 250px;     
 }
 
 .cardsSection{
@@ -113,12 +115,15 @@ a {
     justify-content: center;
     align-items: center;
     /* border:1px solid red; */
-    flex-wrap: wrap;   
 }
 
 .cards{
     display: flex;
     gap:20px;
+    flex-wrap: wrap;   
+    justify-content: center;
+    align-items: center;
+
 }
 .card{
     /* border:1px solid red; */
