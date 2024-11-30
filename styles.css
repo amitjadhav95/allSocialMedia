@@ -6,7 +6,6 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    line-height: 1.5;
 }
 
 *,
@@ -52,7 +51,6 @@ video {
 
 a {
     text-decoration: none;
-    color: white;
     font-weight: 500;
 }
 
@@ -61,8 +59,17 @@ a {
 /* Header */
 
 .socialLinks li {
-    font-size: 18px;
     margin-right: 10px;
+}
+
+.socialLinks li a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.socialLinks li a:hover {
+    color: hsl(60, 90%, 52%);
+    font-weight: bold;
 }
 
 .container.header {
@@ -78,7 +85,7 @@ a {
 }
 
 .logo {
-    width: 60px;
+    width: 65px;
     border-radius: 50%;
     /* border: 1px solid rgb(92, 221, 23); */
 }
@@ -98,29 +105,35 @@ a {
     flex-wrap: wrap;
 }
 
-.signUpSec .headerMainTitle {
+.headerSignUpSec .headerMainTitle {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
 }
 
-.signUpSec p {
+.headerSignUpSec p {
     font-size: 18px;
     color: #E5E7EB;
 }
 
-.signUpSec,
+.signUpButton.header {
+    background-color: #3882F6;
+    margin: 10px;
+    letter-spacing: .5px;
+}
+
+.headerSignUpSec,
 .headerSignUpImg {
     flex: 1;
 }
 
-.headerSignUpImg {
+.headerPart2 .headerSignUpImg {
     display: flex;
     justify-content: flex-end;
     /* border:1px solid red; */
 }
 
-.headerPart2 img {
+.headerSignUpImg img {
     width: 500px;
     /* Remove when media query  */
     min-width: 100px;
@@ -128,13 +141,25 @@ a {
 }
 
 /* Cards Section */
+/* .cardsSection *{
+    outline:1px solid red;
+} */
 
 .cardsSection {
+    min-height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border:1px solid red; */
+}
+
+.cardsHeader {
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+    color: #3165ad;
+    /* color: #29528d; */
 }
 
 .cards {
@@ -149,6 +174,26 @@ a {
     /* border:1px solid red; */
     width: 100px;
     padding: 10px;
+    height: 125px;
+    min-height: auto;
+}
+
+.card a {
+    color: #4075df;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.card a:hover {
+    color: hsl(60, 90%, 52%);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cardImg {
+    margin-bottom: 10px;
 }
 
 /* .card img{
@@ -164,10 +209,6 @@ a {
     flex-direction: column;
 }
 
-.cardsHeader {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
 /* Reviews Section */
 
@@ -187,7 +228,7 @@ a {
     font-style: italic;
     font-weight: 900;
     text-align: center;
-    /* color: #3e6aa8; */
+    margin-bottom: 5px;   
     color: #29528d;
 }
 
@@ -221,46 +262,63 @@ a {
     align-items: center;
 }
 
-/* Sign Up
+/* Sign Up */
 
-.signUp {
+.signUpCTA {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border:4px solid rgb(80, 231, 34);
-    background-color: #3882F6;
-    Remove at media query
-    flex-wrap: wrap;
-    Color: white;
-    min-height: 200px;
-    align-content: center;
-    gap: 5px;
+    /* border:1px solid rgb(80, 231, 34);     */
+    justify-content: center;
+    min-height: 210px;
 }
 
-.signUpHeading {
+.CTAContent {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #3882F6;
+    padding: 15px;
+    Color: white;
+    align-content: center;
+    border-radius: 15px;
+}
+
+.CTAText {
+    flex: 7;
+    padding: 10px;
+}
+
+.CTAText .CTAHeading {
     display: flex;
     font-size: 36px;
-    color: #1F2937;
+    color: #F9FAF8;
     font-weight: 900;
     text-align: center;
 }
 
-.signUpText {
-    flex: 7;
+.CTAText p {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
-.signUpButton {
+.CTASignUpNow {
+    padding: 10px;
     display: flex;
     align-items: center;
     flex: 3;
     justify-content: center;
 }
 
-#signUpNow {
+.signUpButton {
     background-color: transparent;
-    color: white;
-    padding: 10px 35px;
-} */
+    padding: 7px 25px;
+    border: 1px solid white;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
 /* Footer */
 /* Default padding ovverrided */
